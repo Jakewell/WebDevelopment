@@ -1,0 +1,34 @@
+@import "variablesTAG";
+@import "variablesID";
+@import "variablesCLASS";
+@import "mixins";
+
+%main-text-box-inheritance {
+    width: $main-text-box-width;
+	//background-color: $main-text-box-background-color;
+	@include main-text-box-flex(1);
+}
+
+%fixed-nav-inheritance {
+    width: 50%;
+    height: 50px;
+    margin-top: -50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: none;
+    z-index: 10;
+}
+
+%fixed-nav-block-inheritance {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+	
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+	display: flex; 
+}
